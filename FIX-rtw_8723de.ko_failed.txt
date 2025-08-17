@@ -1,4 +1,5 @@
 # https://github.com/lwfinger/rtw88/issues/363#issuecomment-3193949191
+# # Fix for: Error!  Build of rtw_8723de.ko failed for: 6.12.34+rpt-rpi-v7 (armv7l)
 # Confirming for RPI 2B with USB device
 # Bus 001 Device 004: ID 2001:3314 D-Link Corp. DWA-171 AC600 DB Wireless Adapter(rev.A1) [Realtek RTL8811AU]
 # Removing from dkms.conf the PCI dependent modules found under ifeq ($(CONFIG_PCI), y) sections in Makefile solved it for me as well:
