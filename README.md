@@ -97,18 +97,20 @@ It's highly recommended to install this driver via DKMS especially Secure Boot i
    sudo dkms install $PWD
    ```
    Fix for: Error!  Build of rtw_8723de.ko failed for: 6.12.34+rpt-rpi-v7 (armv7l)
+   
+   https://github.com/sashablue/rtw88/blob/master/FIX-rtw_8723de.ko_failed.txt
 
-4. Install the firmware necessary for the rtw88 driver
+5. Install the firmware necessary for the rtw88 driver
    ```
    sudo make install_fw
    ```
 
-5. Copy the configuration file `rtw88.conf` to `/etc/modprobe.d/`
+6. Copy the configuration file `rtw88.conf` to `/etc/modprobe.d/`
    ```
    sudo cp rtw88.conf /etc/modprobe.d/
    ```
 
-6. Enroll the MOK (Machine Owner Key), this is needed **ONLY IF** Secure Boot is enabled on your machine.
+7. Enroll the MOK (Machine Owner Key), this is needed **ONLY IF** Secure Boot is enabled on your machine.
    ```
    sudo mokutil --import /var/lib/dkms/mok.pub
    ```
