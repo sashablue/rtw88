@@ -96,7 +96,7 @@ It's highly recommended to install this driver via DKMS especially Secure Boot i
    ```
    sudo dkms install $PWD
    ```
-   Fix for: Error!  Build of rtw_8723de.ko failed for: 6.12.34+rpt-rpi-v7 (armv7l)
+   Fix for: ```Error!  Build of rtw_8723de.ko failed for: 6.12.34+rpt-rpi-v7 (armv7l)```
    
    https://github.com/sashablue/rtw88/blob/master/FIX-rtw_8723de.ko_failed.txt
 
