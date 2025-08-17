@@ -1,3 +1,9 @@
+# https://github.com/lwfinger/rtw88/issues/363#issuecomment-3193949191
+# Confirming for RPI 2B with USB device
+# Bus 001 Device 004: ID 2001:3314 D-Link Corp. DWA-171 AC600 DB Wireless Adapter(rev.A1) [Realtek RTL8811AU]
+# Removing from dkms.conf the PCI dependent modules found under ifeq ($(CONFIG_PCI), y) sections in Makefile solved it for me as well:
+# dkms.conf after removal:
+
 PACKAGE_NAME="rtw88"
 PACKAGE_VERSION="0.6"
 MAKE="KVER=${kernelver} 'make' all"
